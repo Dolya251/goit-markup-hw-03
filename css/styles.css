@@ -15,19 +15,47 @@ body {
   background-color: var(--primary-wite-color);
   color: var(--primary-text-color);
 }
-.list {
-  list-style-type: none;
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
   padding: 0;
   margin: 0;
 }
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  /* display: flex;
+  flex-direction: row;*/
+}
 .link {
+  color: var(--primary-text-color);
   text-decoration: none;
+  /*display: flex;
+  flex-direction: row;*/
 }
 .link:hover,
 .link:focus {
   color: var(--accent-color);
   cursor: pointer;
-  background-color: aquamarine;
 }
 /*header*/
 .navigation {
@@ -37,6 +65,7 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
+
 .logo {
   font-family: Raleway;
   font-style: Bold;
@@ -45,11 +74,38 @@ body {
   font-weight: 500;
   color: var(--accent-color);
   letter-spacing: 0.03em;
+  padding-right: 93px;
 }
 .studio {
   color: var(--new-accent-color);
 }
-
+.link-current {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+.container {
+  width: 1600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*padding-left: 0;
+  padding-right: 0;
+  margin-left: 215px;
+  margin-right: 215px;
+  display: flex;
+  flex-direction: row;*/
+}
+.main-menu {
+  display: flex;
+  flex-direction: row;
+  padding: auto;
+}
+.nav-links {
+  padding-right: 331px;
+}
+.p5 {
+  padding-right: 50px;
+}
 /*hero*/
 .hero {
   font-weight: 900;
@@ -71,18 +127,15 @@ body {
   text-transform: none;
   color: var(--primary-wite-color);
   cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
 }
 .hero-button:hover,
 .hero-button:focus {
   background-color: var(--accent-bt-color);
 }
-.e-mail-address,
-.phone-number:hover,
-.e-mail-address,
-.phone-number:focus {
-  cursor: pointer;
-  color: var(--accent-color);
-}
+
 /*advantages */
 .advantages-item-header {
   font-weight: 700;
@@ -164,11 +217,15 @@ footer {
   line-height: 1.62;
   letter-spacing: 0.03em;
   background-color: var(--primary-grey-color);
+  border: none;
+  border-radius: 4px;
 }
 .filter:hover,
 .filter:focus {
-  border-radius: 4px;
-  border-color: var(--accent-color);
+  color: var(--primary-wite-color);
+  background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
   cursor: pointer;
 }
 .filter.oll {

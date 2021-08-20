@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Главная</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -16,18 +17,21 @@
 
 <body>
     <header class="navigation">
-        <nav>
-            <a href="#" class="logo link">Web <span class="studio"> Studio</span></a>
-            <ul class="nav-links list">
-                <li><a href="./index.html" class="link">Студия</a></li>
-                <li><a href="portfolio.html" class="link">Портфолио</a></li>
-                <li><a href="#" class="link">Контакты</a></li>
+       <div class="container"> 
+            
+            <a href="#" class="logo link main-menu">Web <span class="studio"> Studio</span></a>
+            <nav>
+                <ul class="nav-links list main-menu">
+                    <li><a href="./index.html" class="link-current p5">Студия</a></li>
+                    <li><a href="portfolio.html" class="link p5">Портфолио</a></li>
+                    <li><a href="#" class="link">Контакты</a></li>
+                </ul>
+            </nav>
+            <ul class="links  list main-menu">
+                <li><a href="mailto:info@devstudio.com" class="e-mail-address link p5">info@devstudio.com</a></li>
+                <li><a href="tel:+380961111111" class="phone-number link">+38 096 111 11 11</a></li>
             </ul>
-        </nav>
-        <ul class="links  list">  
-            <li ><a href="mailto:info@devstudio.com" class="e-mail-address link">info@devstudio.com</a></li>
-            <li ><a href="tel:+380961111111" class="phone-number link">+38 096 111 11 11</a></li>
-        </ul>
+        </div>
     </header>
     <main>
         <!-- hero-->
@@ -37,32 +41,32 @@
         </section>
 
         <!--advantages -->
-        <section class="advantages">
-           
-            <ul class="advantages-list  list">
+        <section class="advantages ">
+
+            <ul class="advantages-list  list container">
                 <li class="advantages-item1">
-                    <img src="/images/Rectangle 3 (3).jpg" width="270px"class="visually-hidden" alt="antena">
+                    <img src="/images/Rectangle 3 (3).jpg" width="270px" class="visually-hidden" alt="antena">
                     <h3 class="advantages-item-header">Внимание к деталям</h3>
                     <p class="advantages-item-text">Идейные соображения, а также начало повседневной работы по
                         формированию позиции.</p>
                 </li>
 
                 <li class="advantages-item2">
-                    <img src="/images/Rectangle 3 (3).jpg" width="270px"class="visually-hidden"alt="antena">
+                    <img src="/images/Rectangle 3 (3).jpg" width="270px" class="visually-hidden" alt="antena">
                     <h3 class="advantages-item-header">Пунктуальность</h3>
                     <p class="advantages-item-text">Задача организации, в особенности же рамки и место обучения кадров
                         влечет за собой.</p>
                 </li>
 
                 <li class="advantages-item3">
-                    <img src="/images/Rectangle 3 (3).jpg" width="270px"class="visually-hidden"alt="antena">
+                    <img src="/images/Rectangle 3 (3).jpg" width="270px" class="visually-hidden" alt="antena">
                     <h3 class="advantages-item-header">Планирование</h3>
                     <p class="advantages-item-text">Равным образом консультация с широким активом в значительной
                         степени обуславливает.</p>
                 </li>
 
                 <li class="advantages-item4">
-                    <img src="/images/Rectangle 3 (3).jpg" width="270px"class="visually-hidden"alt="antena">
+                    <img src="/images/Rectangle 3 (3).jpg" width="270px" class="visually-hidden" alt="antena">
                     <h3 class="advantages-item-header">Современные технологии</h3>
                     <p class="advantages-item-text">Значимость этих проблем настолько очевидна, что реализация плановых
                         заданий.</p>
@@ -71,13 +75,13 @@
             </ul>
         </section>
         <!--our job-->
-        <section class="our-job">
-        <h2 class="our-job-header">Чем мы занимаемся</h2>
-        <ul class="our-job-imges  list">
-            <li class="our-job-img"><img src="images/1wwd.jpg" alt="computer"></li>
-            <li class="our-job-img"><img src="images/imgwhatwedo2.jpg" alt="smartphone"></li>
-            <li class="our-job-img"><img src="images/3wwd.jpg" alt="laptop"></li>
-        </ul>
+        <section class="our-job ">
+            <h2 class="our-job-header">Чем мы занимаемся</h2>
+            <ul class="our-job-imges  list container">
+                <li class="our-job-img"><img src="images/1wwd.jpg" alt="computer"></li>
+                <li class="our-job-img"><img src="images/imgwhatwedo2.jpg" alt="smartphone"></li>
+                <li class="our-job-img"><img src="images/3wwd.jpg" alt="laptop"></li>
+            </ul>
         </section>
         <!--our team-->
         <section class="our-team">
@@ -105,15 +109,15 @@
             </ul>
         </section>
         <section class="visually-hidden">
-           <h3 class="client-title">Постоянные клиенты</h3> 
-           <ul class="list ">
-               <li>client1</li>
-               <li>client2</li>
-               <li>client3</li>
-               <li>client4</li>
-               <li>client5</li>
-               <li>client6</li>
-           </ul>
+            <h3 class="client-title">Постоянные клиенты</h3>
+            <ul class="list ">
+                <li>client1</li>
+                <li>client2</li>
+                <li>client3</li>
+                <li>client4</li>
+                <li>client5</li>
+                <li>client6</li>
+            </ul>
         </section>
     </main>
     <!--footer-->
@@ -122,9 +126,9 @@
         <address>
             <p class="footer-adress">г. Киев, пр-т Леси Украинки, 26</p>
             <ul class="footer-links list">
-                    <li ><a href="mailto:info@devstudio.com" class="footer-e-mail-address link">info@devstudio.com</a></li>
-                    <li ><a href="tel:+380961111111" class="footer-phone-number link">+38 096 111 11 11</a></li>
-               </ul>
+                <li><a href="mailto:info@devstudio.com" class="footer-e-mail-address link">info@devstudio.com</a></li>
+                <li><a href="tel:+380961111111" class="footer-phone-number link">+38 096 111 11 11</a></li>
+            </ul>
         </address>
 
     </footer>
