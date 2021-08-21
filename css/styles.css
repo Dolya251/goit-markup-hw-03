@@ -34,11 +34,13 @@ h4,
 p {
   margin: 0;
 }
+
 img {
   display: block;
   max-width: 100%;
   height: auto;
 }
+
 .list {
   list-style: none;
   padding: 0;
@@ -46,6 +48,7 @@ img {
   /* display: flex;
   flex-direction: row;*/
 }
+
 .link {
   color: var(--primary-text-color);
   text-decoration: none;
@@ -64,18 +67,29 @@ img {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  height: 80px;
+  padding: 25px 0;
+}
+
+.contacts-links {
+  display: flex;
+  flex-direction: row-reverse;
+  flex: 1;
 }
 
 .logo {
   font-family: Raleway;
-  font-style: Bold;
   font-size: 26px;
   line-height: 1.17;
   font-weight: 500;
   color: var(--accent-color);
   letter-spacing: 0.03em;
-  padding-right: 93px;
+  word-break: keep-all;
+  display: block;
+  min-width: 150px;
+  margin-right: 70px;
 }
+
 .studio {
   color: var(--new-accent-color);
 }
@@ -83,26 +97,27 @@ img {
   color: var(--accent-color);
   text-decoration: none;
 }
+
 .container {
-  width: 1600px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  /*padding-left: 0;
-  padding-right: 0;
-  margin-left: 215px;
-  margin-right: 215px;
-  display: flex;
-  flex-direction: row;*/
-}
-.main-menu {
+  width: 1200px;
   display: flex;
   flex-direction: row;
-  padding: auto;
+  margin: 0 auto;
+  padding: 0 15px;
 }
+
 .nav-links {
-  padding-right: 331px;
+  display: flex;
+  flex-direction: row;
+  height: 30px;
+  line-height: 16px;
+  padding:7px 0;
 }
+
+.nav-links li {
+  padding: 0 25px;
+}
+
 .p5 {
   padding-right: 50px;
 }
@@ -246,9 +261,9 @@ footer {
   letter-spacing: 0.03em;
   color: var(--p-text-color);
 }
-.container:hover,
+/* .container:hover,
 .container:focus {
   background: var(--primary-wite-color);
   border: 1px solid var(--border-accent-color);
   box-sizing: border-box;
-}
+} */
