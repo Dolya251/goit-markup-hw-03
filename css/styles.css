@@ -9,6 +9,7 @@
   --main-bt-color: #f5f4fa;
   --new-accent-color: #000000;
   --border-accent-color: #eeeeee;
+  --border-header-color: #ececec;
 }
 body {
   font-family: "Roboto", sans-serif;
