@@ -134,6 +134,8 @@ li {
 /*hero*/
 .hero {
   background-color: var(--primary-bg-color);
+}
+.hero .container {
   display: flex;
   flex-direction: column;
 }
@@ -175,6 +177,7 @@ li {
 }
 
 /*advantages */
+
 .advantages-item-header {
   font-weight: 700;
   font-size: 14px;
@@ -214,6 +217,9 @@ li {
   width: calc((100% - 90px) / 4);
 }
 /*our job*/
+.our-job {
+  padding-top: 0;
+}
 .our-job .container {
   display: flex;
   flex-direction: column;
@@ -230,11 +236,10 @@ li {
 
 .our-job-imges {
   display: flex;
-  flex-direction: row;
 }
 
 .our-job-imges .our-job-img {
-  width: cal((100% - 60px) / 3);
+  width: calc((100% - 60px) / 3);
   margin-right: 30px;
 }
 
@@ -242,10 +247,6 @@ li {
   margin-right: 0;
 }
 /*our team*/
-.our-team .container {
-  display: flex;
-  flex-direction: column;
-}
 .our-team {
   background-color: var(--primary-grey-color);
 }
@@ -269,11 +270,14 @@ li {
 
 .our-team-members {
   display: flex;
-  flex-direction: row;
 }
 .our-team-member {
   margin-right: 30px;
   width: calc((100% - 90px) / 4);
+  background-color: var(--primary-wite-color);
+}
+.our-team-member:last-child {
+  margin-right: 0;
 }
 /*clients*/
 .client-title {
@@ -300,12 +304,12 @@ footer .container {
 }
 footer {
   background-color: var(--primary-bg-color);
+  padding: 60px;
 }
 .footer-studio {
   color: var(--primary-wite-color);
 }
 .footer-adress,
-.footer-contacts-link,
 .footer-contacts-link {
   font-style: normal;
   font-size: 14px;
@@ -313,29 +317,18 @@ footer {
   letter-spacing: 0.03em;
   text-decoration: none;
   color: var(--primary-wite-color);
+  margin-bottom: 9px;
 }
-.footer-contacts-link,
 .footer-contacts-link {
   color: rgba(255, 255, 255, 0.6);
-}
-.footer-adress {
-  margin-top: 20px;
-}
-.footer-contacts li {
-  margin-bottom: 9px;
 }
 
 /*portfolio*/
 /* filters*/
 .filters {
   display: flex;
-  flex-direction: row;
   justify-content: center;
   margin-bottom: 50px;
-  margin-left: -8px;
-}
-.filters li {
-  margin-left: 8px;
 }
 .filter {
   font-weight: 500;
@@ -346,6 +339,7 @@ footer {
   border: none;
   border-radius: 4px;
   padding: 6px 22px;
+  margin-left: 8px;
 }
 .filter:hover,
 .filter:focus {
@@ -361,14 +355,12 @@ footer {
   background-color: var(--accent-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
+  margin-left: 0;
 }
-.projects-section .container {
-  flex-direction: column;
-}
+
 .projects {
   margin: -30px 0 0 -30px;
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
 }
 .project {
@@ -386,6 +378,7 @@ footer {
   line-height: 2;
   letter-spacing: 0.06em;
   margin-bottom: 4px;
+  color: var(--primary-text-color);
 }
 .project-text {
   font-size: 16px;
@@ -393,12 +386,11 @@ footer {
   letter-spacing: 0.03em;
   color: var(--text-color);
 }
-.project:hover,
-.project:focus {
+.portfolio-link:hover,
+.portfolio-link:focus {
   background: var(--primary-wite-color);
-  border: 1px solid var(--border-accent-color);
-  box-sizing: border-box;
+  display: block;
 }
-.portfolio-card-box {
+.portfolio-link {
   text-decoration: none;
 }
